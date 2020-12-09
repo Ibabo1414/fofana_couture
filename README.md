@@ -4,7 +4,7 @@ FOFANA COUTURE, est simplement une PWA (Progressive Web App). En d'autres, FOFAN
 # Site
 Le site est disponible à l'adresse suivante :
 
-https://ibabo1414.github.io/fofana_couture/
+https://fofana-couture.netlify.app/
 
 # Les différentes évolutions de Fofana Couture
 
