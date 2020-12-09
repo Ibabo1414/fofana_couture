@@ -1,5 +1,6 @@
 /* CSS Resets */
 
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400&family=Lora&display=swap');
 ul,
 p {
     margin: 0;
@@ -18,7 +19,7 @@ h2,
 h3,
 a,
 p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lora', serif;
 }
 
 a:hover,
@@ -26,51 +27,12 @@ a:focus {
     text-decoration: none;
 }
 
-
-/*  =========  ***** ABOUT US *****  =========  */
-
-.about {
-    -webkit-background-size: cover;
-    -ms-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    margin: 20px;
-}
-
-.about-box {
-    padding: 20px 0;
-    top: 0;
-    margin: auto;
-    max-width: 650px;
-    background: #ffffffd9;
-    -webkit-background-size: cover;
-    -ms-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-}
-
-.about-box p:nth-child(3) {
-    margin-top: -2em;
-}
-
-.about-title {
-    color: #2e9bc6;
-    font-size: 26px;
-    font-weight: 500;
-    padding: 0 0 0 20px;
-}
-
-.about-text {
-    font-size: 17px;
-    color: #666666;
-    line-height: 21px;
-    font-weight: 500;
-    padding: 20px;
-    text-align: justify;
+span .catalogue {
+    color: #cc490c;
 }
 
 
-/*  =========  ***** GALLERY *****  =========  */
+/*  ========  ***** GALLERY *****  ========  */
 
 #rl_pf {
     margin-top: 5em;
@@ -276,11 +238,11 @@ body {
 }
 
 .tm-site-name-container {
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .tm-site-name {
-    color: #FCDD44;
+    color: #da7d31;
     font-size: 19px;
     font-weight: 600;
     text-transform: uppercase;
@@ -288,7 +250,7 @@ body {
 
 .tm-site-name:hover,
 .tm-site-name:focus {
-    color: #FF720B;
+    color: #da7d31;
 }
 
 .mobile-menu-icon {
@@ -298,6 +260,7 @@ body {
 .tm-nav {
     display: block;
     overflow: hidden;
+    margin-left: -8em;
 }
 
 .tm-nav li {
@@ -306,18 +269,20 @@ body {
 }
 
 .tm-nav li a {
-    color: #838383;
+    color: #ffffff;
     display: block;
-    padding: 45px 34px 15px 34px;
+    padding: 45px 10px 15px 15px;
     text-transform: uppercase;
     transition: all 0.3s ease;
+    margin-top: -1em;
 }
 
-.tm-nav li a.active,
+
+/*.tm-nav li a.active,*/
+
 .tm-nav li a:focus,
 .tm-nav li a:hover {
-    background: #FCDD44;
-    color: #000;
+    color: #FCDD44;
 }
 
 
@@ -353,7 +318,7 @@ body {
 
 .tm-banner-title,
 .tm-banner-subtitle {
-    color: white;
+    color: #f5f2ef;
 }
 
 .tm-banner-title {
@@ -366,7 +331,7 @@ body {
 }
 
 .tm-yellow-text {
-    color: #FCDD44;
+    color: #da7d31;
 }
 
 .tm-banner-link {
@@ -397,7 +362,7 @@ body {
 }
 
 .flexslider.flexslider-banner .flex-direction-nav a:before {
-    color: #FCDD44;
+    color: #da7d31;
 }
 
 .flex-direction-nav a {
@@ -426,14 +391,7 @@ body {
 }
 
 .tm-yellow-gradient-bg {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5d11d+0,f3d10e+1,efcf1c+2,fccd0d+4,f7ca0d+5,f9cb1e+6,f7cb10+7,f8cc14+8,f0c40c+54,edc50c+55,e9c108+71,ecc008+78,e6be06+91,e9bd06+93,e8bc06+100 */
     background: #f5d11d;
-    /* Old browsers */
-    /* FF3.6+ */
-    /* Chrome,Safari4+ */
-    /* Chrome10+,Safari5.1+ */
-    /* Opera 11.10+ */
-    /* IE10+ */
     background: linear-gradient(to bottom, #f5d11d 0%, #f3d10e 1%, #efcf1c 2%, #fccd0d 4%, #f7ca0d 5%, #f9cb1e 6%, #f7cb10 7%, #f8cc14 8%, #f0c40c 54%, #edc50c 55%, #e9c108 71%, #ecc008 78%, #e6be06 91%, #e9bd06 93%, #e8bc06 100%);
     /* W3C */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f5d11d', endColorstr='#e8bc06', GradientType=0);
@@ -441,14 +399,7 @@ body {
 }
 
 .tm-green-gradient-bg {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2ec66b+0,2dc970+1,2ac96c+2,2bc76e+4,2bc869+5,2ac871+6,29c86c+7,28c76b+15,2bc76c+16,21bb61+73,1eb860+100 */
     background: #2e9bc6;
-    /* Old browsers */
-    /* FF3.6+ */
-    /* Chrome,Safari4+ */
-    /* Chrome10+,Safari5.1+ */
-    /* Opera 11.10+ */
-    /* IE10+ */
     background: #2e9bc6;
     /* W3C */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#2ec66b', endColorstr='#1eb860', GradientType=0);
@@ -456,14 +407,7 @@ body {
 }
 
 .tm-red-gradient-bg {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e97262+0,ef6865+1,ed6c5f+2,f07162+4,f17062+5,eb6f67+6,ec6c5f+7,ec6b5e+18,eb5d4f+56,e95242+100 */
     background: #e97262;
-    /* Old browsers */
-    /* FF3.6+ */
-    /* Chrome,Safari4+ */
-    /* Chrome10+,Safari5.1+ */
-    /* Opera 11.10+ */
-    /* IE10+ */
     background: linear-gradient(to bottom, #e97262 0%, #ef6865 1%, #ed6c5f 2%, #f07162 4%, #f17062 5%, #eb6f67 6%, #ec6c5f 7%, #ec6b5e 18%, #eb5d4f 56%, #e95242 100%);
     /* W3C */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e97262', endColorstr='#e95242', GradientType=0);
@@ -518,12 +462,9 @@ body {
 }
 
 
-/*http://cssdeck.com/labs/different-css3-box-shadows-effects*/
-
-
-/*==================================================
+/*==============================
  * Effect 2
- * ===============================================*/
+ * ============================*/
 
 .effect2 {
     position: relative;
@@ -657,6 +598,7 @@ hr {
     text-transform: uppercase;
     font-size: 36px;
     font-weight: 300;
+    color: #4234c5;
 }
 
 .tm-home-box-2 {
@@ -815,9 +757,9 @@ hr {
     float: left;
     background-color: #1687A6;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 15px;
     display: block;
-    padding: 17px 30px;
+    padding: 10px 30px;
     width: 25%;
     transition: all 0.3s;
     text-align: center;
@@ -831,7 +773,7 @@ hr {
 
 .tm-tours-box-1-link-left,
 .tm-tours-box-1-link-right {
-    color: white;
+    color: #ffffff;
     height: 60px;
 }
 
@@ -992,7 +934,7 @@ hr {
 .tm-about-box-2-footer {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-    text-align: right;
+    /*text-align: right;*/
     text-transform: uppercase;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -1069,7 +1011,7 @@ hr {
 
 .contact-image {
     float: left;
-    widthh: 100%;
+    width: 100%;
     max-width: 494px;
 }
 
@@ -1092,12 +1034,6 @@ hr {
 
 .tm-submit-btn {
     background: #f5d11d;
-    /* Old browsers */
-    /* FF3.6+ */
-    /* Chrome,Safari4+ */
-    /* Chrome10+,Safari5.1+ */
-    /* Opera 11.10+ */
-    /* IE10+ */
     background: linear-gradient(to bottom, #f5d11d 0%, #f3d10e 1%, #efcf1c 2%, #fccd0d 4%, #f7ca0d 5%, #f9cb1e 6%, #f7cb10 7%, #f8cc14 8%, #f0c40c 54%, #edc50c 55%, #e9c108 71%, #ecc008 78%, #e6be06 91%, #e9bd06 93%, #e8bc06 100%);
     /* W3C */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f5d11d', endColorstr='#e8bc06', GradientType=0);
@@ -1249,6 +1185,12 @@ hr {
 }
 
 @media screen and (max-width: 991px) {
+    .tm-nav {
+        margin-left: -3em;
+    }
+    .tm-site-name {
+        font-size: 13px;
+    }
     .tm-home-box-1 {
         margin-bottom: 50px;
         width: 346px;
@@ -1268,7 +1210,10 @@ hr {
         margin-bottom: 30px;
     }
     .home-description {
-        margin: 40px auto 40px;
+        margin: 60px auto 40px;
+    }
+    .tm-section-title {
+        font-size: 17px;
     }
     .tm-tours-box-1-link-left {
         width: 65%;
@@ -1490,4 +1435,36 @@ hr {
     .tm-section-title {
         font-size: 28px;
     }
+}
+
+
+/****************** back to top *****************/
+
+#back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 3rem;
+    background: transparent;
+    color: #FF8C00;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #000000;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+    z-index: 99;
+}
+
+#back-to-top-btn:hover,
+#back-to-top-btn:focus {
+    background-color: #e7e3e3;
+    color: #fff;
+}
+
+.fa-angle-double-up:before {
+    color: #FF8C00;
 }

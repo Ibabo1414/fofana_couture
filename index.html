@@ -1,18 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fofana couture</title>
-
+    <!----------------------- Début favicon ------------------------------->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!----------------------- ## Fin favicon ## ------------------------------->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
     <link href="css/flexslider.css" rel="stylesheet">
     <link href="css/templatemo-style.css" rel="stylesheet">
+    <!-- File JS AO -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169336795-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-169336795-1');
+    </script>
+    <!-- File PWA-->
+    <meta name="theme-color" content="#ffff" />
+    <link rel="manifest" href="manifest.json">
+    <script>
+        //if browser support service worker
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        };
+    </script>
 
 </head>
 
@@ -31,7 +73,11 @@
                     <nav class="tm-nav">
                         <ul>
                             <li><a href="index.html" class="active">Accueil</a></li>
-                            <li><a href="tours.html">Nos modèles</a></li>
+                            <li><a href="femmes.html">Femmes</a></li>
+                            <li><a href="hommes.html">Hommes</a></li>
+
+                            <li><a href="enfants.html">Enfants</a></li>
+                            <li><a href="couples.html">Couples</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
@@ -48,29 +94,33 @@
             <ul class="slides">
                 <li>
                     <div class="tm-banner-inner">
-                        <h1 class="tm-banner-title">Nous <span class="tm-yellow-text">sommes </span>à votre service</h1>
-                        <p class="tm-banner-subtitle">Fofana Couture</p>
-                        <a href="#more" class="tm-banner-link">Voire plus</a>
+                        <h1 class="tm-banner-title">Nous <span class="tm-yellow-text">sommes à votre</span> service</h1>
+                        <a href="contact.html" class="tm-banner-link">Contactez-nous</a>
                     </div>
-                    <img src="img/fofana-taille-1.jpg" alt="Image" />
+                    <img src="images/accueil-header/header-fofana-1_5.jpg" alt="Image" />
                 </li>
 
                 <li>
                     <div class="tm-banner-inner">
                         <h1 class="tm-banner-title">Faites <span class="tm-yellow-text">votre </span>choix</h1>
-                        <p class="tm-banner-subtitle">Fofana Couture</p>
-                        <a href="#more" class="tm-banner-link">Voire plus</a>
+                        <a href="contact.html" class="tm-banner-link">Contactez-nous</a>
                     </div>
-                    <img src="img/fofana-taille-2.jpg" alt="Image" />
+                    <img src="images/accueil-header/header-fofana-1_8.jpg" alt="Image" />
                 </li>
 
                 <li>
                     <div class="tm-banner-inner">
-                        <h1 class="tm-banner-title">Nous sommes <span class="tm-yellow-text">là</span> pour vous</h1>
-                        <p class="tm-banner-subtitle">Fofana Couture</p>
-                        <a href="#more" class="tm-banner-link">Voire plus</a>
+                        <h1 class="tm-banner-title">Nous sommes là<span class="tm-yellow-text"></span> pour vous</h1>
+                        <a href="contact.html" class="tm-banner-link">Contactez-nous</a>
                     </div>
-                    <img src="img/fofana-taille-3.jpeg" alt="Image" />
+                    <img src="images/accueil-header/header-fofana-1-0.jpeg" alt="Image" />
+                </li>
+                <li>
+                    <div class="tm-banner-inner">
+                        <h1 class="tm-banner-title">Faites <span class="tm-yellow-text">votre </span>choix</h1>
+                        <a href="contact.html" class="tm-banner-link">Contactez-nous</a>
+                    </div>
+                    <img src="images/accueil-header/header-fofana-7.jpg" alt="Image" />
                 </li>
 
             </ul>
@@ -87,13 +137,13 @@
             <div class="flexslider flexslider-about effect2">
                 <ul class="slides">
                     <li>
-                        <img src="img/about-1.jpg" alt="image" />
+                        <img src="images/fofana-1-2.jpg" alt="image" />
                         <div class="flex-caption">
-                            <h2 class="slider-title">Welcome To Holiday</h2>
-                            <h3 class="slider-subtitle">Gravida nibh vel velit auctor aliquet enean sollicitudin lorem quis auctor</h3>
-                            <p class="slider-description">Holiday is free Bootstrap v3.3.5 responsive template for tour and travel websites. You can download and use this layout for any purpose. You do not need to provide a credit link to us. If you have any question, feel free to
-                                <a href="http://www.facebook.com/templatemo" target="_parent">contact us</a>. <br><br> Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu
-                                ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum.</p>
+                            <h2 class="slider-title">FOFANA COUTURE ?</h2>
+                            <h3 class="slider-subtitle">Les vêtements pour femme les plus chics à portée de clic.</h3>
+                            <p class="slider-description">Installé au charbonnage, FOFANA COUTURE bénéficie d'une solide expérience dans les domaines de la couture depuis plus de 15 ans.
+                                <br><br> Il est très important pour nous que toutes les femmes puissent trouver leur bonheur sur notre site, c’est pourquoi nous avons une gamme de taille très importante pour que n’importe quelle morphologie puisse y trouver
+                                son compte.</p>
                             <div class="slider-social">
                                 <a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
                                 <a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
@@ -103,12 +153,13 @@
                         </div>
                     </li>
                     <li>
-                        <img src="img/about-1.jpg" alt="image" />
+                        <img src="images/fofana-hommes-2.jpg" alt="image" />
                         <div class="flex-caption">
-                            <h2 class="slider-title">Thank you for choosing us!</h2>
-                            <h3 class="slider-subtitle">Gravida nibh vel velit auctor aliquet enean sollicitudin lorem quis auctor, nisi elit consequat ipsum</h3>
-                            <p class="slider-description">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<br><br>                                Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris gestas
-                                quam, ut aliquam massa nisi.</p>
+                            <h2 class="slider-title">FOFANA COUTURE ?</h2>
+                            <h3 class="slider-subtitle">Les vêtements pour les hommes les plus chics à portée de clic.</h3>
+                            <p class="slider-description">Installé au charbonnage, FOFANA COUTURE bénéficie d'une solide expérience dans les domaines de la couture depuis plus de 15 ans.
+                                <br><br> Il est très important pour nous que toutes les femmes puissent trouver leur bonheur sur notre site, c’est pourquoi nous avons une gamme de taille très importante pour que n’importe quelle morphologie puisse y trouver
+                                son compte.</p>
                             <div class="slider-social">
                                 <a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
                                 <a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
@@ -118,13 +169,13 @@
                         </div>
                     </li>
                     <li>
-                        <img src="img/about-1.jpg" alt="image" />
+                        <img src="images/fofana-enfants-1.jpg" alt="image" />
                         <div class="flex-caption">
-                            <h2 class="slider-title">More Programs to come</h2>
-                            <h3 class="slider-subtitle">Gravida nibh vel velit auctor aliquet enean sollicitudin lorem quis auctor, nisi elit consequat ipsum</h3>
-                            <p class="slider-description">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                                Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris gestas
-                                quam, ut aliquam massa nisi.</p>
+                            <h2 class="slider-title">FOFANA COUTURE ?</h2>
+                            <h3 class="slider-subtitle">Les vêtements pour les enfants les plus chics à portée de clic.</h3>
+                            <p class="slider-description">Installé au charbonnage, FOFANA COUTURE bénéficie d'une solide expérience dans les domaines de la couture depuis plus de 15 ans.
+                                <br><br> Il est très important pour nous que toutes les femmes puissent trouver leur bonheur sur notre site, c’est pourquoi nous avons une gamme de taille très importante pour que n’importe quelle morphologie puisse y trouver
+                                son compte.</p>
                             <div class="slider-social">
                                 <a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
                                 <a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
@@ -134,23 +185,22 @@
                         </div>
                     </li>
                     <li>
-                        <img src="img/about-1.jpg" alt="image" />
+                        <img src="images/fofana-couples-15.jpg" alt="image" />
                         <div class="flex-caption">
-                            <h2 class="slider-title">Tour and Travel</h2>
-                            <h3 class="slider-subtitle">Gravida nibh vel velit auctor aliquet enean sollicitudin lorem quis auctor, nisi elit consequat ipsum</h3>
-                            <p class="slider-description">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                                Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris gestas
-                                quam, ut aliquam massa nisi.</p>
-                            <div class="slider-social">
-                                <a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
-                                <a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
-                                <a href="#" class="tm-social-icon"><i class="fa fa-pinterest"></i></a>
-                                <a href="#" class="tm-social-icon"><i class="fa fa-google-plus"></i></a>
-                            </div>
+                            <h2 class="slider-title">FOFANA COUTURE ?</h2>
+                            <h3 class="slider-subtitle">Les vêtements pour les couples les plus chics à portée de clic.</h3>
+                            <p class="slider-description">Installé au charbonnage, FOFANA COUTURE bénéficie d'une solide expérience dans les domaines de la couture depuis plus de 15 ans.
+                                <br><br> Il est très important pour nous que toutes les femmes puissent trouver leur bonheur sur notre site, c’est pourquoi nous avons une gamme de taille très importante pour que n’importe quelle morphologie puisse y trouver
+                                son compte.</p>
+                            <a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="tm-social-icon"><i class="fa fa-pinterest"></i></a>
+                            <a href="#" class="tm-social-icon"><i class="fa fa-google-plus"></i></a>
                         </div>
-                    </li>
-                </ul>
             </div>
+            </li>
+            </ul>
+        </div>
         </div>
 
         <div class="section-margin-top">
@@ -160,98 +210,109 @@
                         <hr>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
-                        <h2 class="tm-section-title">Our Tours</h2>
+                        <h2 class="tm-section-title">Choisissez vos futurs vêtements</h2>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3">
                         <hr>
                     </div>
+                    <!----- Debut : Description des modèles ----->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="home-description">
+                                Faites votre choix parmi notre étendue de modèle des vêtements pour femmes, hommes, enfants et couples. vous trouverez sur notre site tous les styles qui peuvent vous correspondre. Et, c'est pour cela, nous procèdons aux techniques du "sur-mesure" à l'aide
+                                d'épingles, d'un dé à coudre et d'un mètre ruban en ajustant la forme du modèle au corps du client. Cette phase du 1er essayage terminée, des corrections sont apportées au modèle " tissu" pour être de nouveau "bâti" et
+                                près pour un nouvel essayage dans l'objectif de repondre à votre besoin.
+                            </p>
+                        </div>
+                    </div>
+                    <!-----## fin : Description des modèles ##----->
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <div class="tm-tours-box-1">
-                        <img src="img/tours-03.jpg" alt="image" class="img-responsive">
+                        <img src="images/fofana-femmes.png" alt="image" class="img-responsive">
                         <div class="tm-tours-box-1-info">
                             <div class="tm-tours-box-1-info-left">
-                                <p class="text-uppercase margin-bottom-20">Proin Gravida Nibhvel Lorem Quis Bind</p>
-                                <p class="gray-text">28 March 2084</p>
+                                <p class="text-uppercase margin-bottom-20">Vêtements pour femmes</p>
+                                <p class="gray-text">Fofana</p>
                             </div>
                             <div class="tm-tours-box-1-info-right">
-                                <p class="gray-text tours-1-description">Lorem quis bibendum auctor, nisi elit consequat ipsum, sec sagittis sem nibh id elit.</p>
+                                <p class="gray-text tours-1-description">Modèle de notre sélection de vêtements pour femme.</p>
                             </div>
                         </div>
                         <div class="tm-tours-box-1-link">
                             <div class="tm-tours-box-1-link-left">
-                                Duration: 8 days
+                                FEMMES
                             </div>
-                            <a href="#" class="tm-tours-box-1-link-right">
-								$2,200								
+                            <a href="femmes.html" class="tm-tours-box-1-link-right">
+								Voir le catalogue								
 							</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <div class="tm-tours-box-1">
-                        <img src="img/tours-04.jpg" alt="image" class="img-responsive">
+                        <img src="images/fofana-hommes.png" alt="image" class="img-responsive">
                         <div class="tm-tours-box-1-info">
                             <div class="tm-tours-box-1-info-left">
-                                <p class="text-uppercase margin-bottom-20">Proin Gravida Nibhvel Lorem Quis Bind</p>
-                                <p class="gray-text">26 March 2084</p>
+                                <p class="text-uppercase margin-bottom-20">Vêtements pour hommes</p>
+                                <p class="gray-text">Fofana</p>
                             </div>
                             <div class="tm-tours-box-1-info-right">
-                                <p class="gray-text tours-1-description">Lorem quis bibendum auctor, nisi elit consequat ipsum, sec sagittis sem nibh id elit.</p>
+                                <p class="gray-text tours-1-description">Modèle de notre sélection de vêtements pour les hommes.</p>
                             </div>
                         </div>
                         <div class="tm-tours-box-1-link">
                             <div class="tm-tours-box-1-link-left">
-                                Duration: 9 days
+                                HOMMES
                             </div>
-                            <a href="#" class="tm-tours-box-1-link-right">
-								$1,800								
+                            <a href="hommes.html" class="tm-tours-box-1-link-right">
+								Voir le catalogue								
 							</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <div class="tm-tours-box-1">
-                        <img src="img/tours-05.jpg" alt="image" class="img-responsive">
+                        <img src="images/fofana-enfants.png" alt="image" class="img-responsive">
                         <div class="tm-tours-box-1-info">
                             <div class="tm-tours-box-1-info-left">
-                                <p class="text-uppercase margin-bottom-20">Proin Gravida Nibhvel Lorem Quis Bind</p>
-                                <p class="gray-text">24 March 2084</p>
+                                <p class="text-uppercase margin-bottom-20">Vêtements pour enfants</p>
+                                <p class="gray-text">Fofana</p>
                             </div>
                             <div class="tm-tours-box-1-info-right">
-                                <p class="gray-text tours-1-description">Lorem quis bibendum auctor, nisi elit consequat ipsum, sec sagittis sem nibh id elit.</p>
+                                <p class="gray-text tours-1-description">Modèle de notre sélection de vêtements pour les enfants.</p>
                             </div>
                         </div>
                         <div class="tm-tours-box-1-link">
                             <div class="tm-tours-box-1-link-left">
-                                Duration: 8 days
+                                ENFANTS
                             </div>
-                            <a href="#" class="tm-tours-box-1-link-right">
-								$1,600								
+                            <a href="enfants.html" class="tm-tours-box-1-link-right">
+								Voir le catalogue								
 							</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <div class="tm-tours-box-1">
-                        <img src="img/tours-06.jpg" alt="image" class="img-responsive">
+                        <img src="images/fofana-couples.png" alt="image" class="img-responsive">
                         <div class="tm-tours-box-1-info">
                             <div class="tm-tours-box-1-info-left">
-                                <p class="text-uppercase margin-bottom-20">Proin Gravida Nibhvel Lorem Quis Bind</p>
-                                <p class="gray-text">22 March 2084</p>
+                                <p class="text-uppercase margin-bottom-20">Vêtements pour couples</p>
+                                <p class="gray-text">Fofana</p>
                             </div>
                             <div class="tm-tours-box-1-info-right">
-                                <p class="gray-text tours-1-description">Lorem quis bibendum auctor, nisi elit consequat ipsum, sec sagittis sem nibh id elit.</p>
+                                <p class="gray-text tours-1-description">Modèle de notre sélection de vêtements pour les couples.</p>
                             </div>
                         </div>
                         <div class="tm-tours-box-1-link">
                             <div class="tm-tours-box-1-link-left">
-                                Duration: 5 days
+                                COUPLES
                             </div>
-                            <a href="#" class="tm-tours-box-1-link-right">
-								$1,200								
+                            <a href="couples.html" class="tm-tours-box-1-link-right">
+								Voir le catalogue								
 							</a>
                         </div>
                     </div>
@@ -259,7 +320,9 @@
             </div>
         </div>
     </section>
-
+    <button id="back-to-top-btn">
+        <i class="fa fa-angle-double-up"></i>
+      </button>
 
     <footer class="tm-black-bg">
         <div class="container">
@@ -276,6 +339,8 @@
     <!-- flexslider js -->
     <script type="text/javascript" src="js/templatemo-script.js"></script>
     <!-- Templatemo Script -->
+    <!--<script src="js/loader.js"></script>-->
+    <script src="js/back.js"></script>
     <script>
         $(function() {
 
@@ -304,6 +369,10 @@
                 slideshow: false
             });
         });
+    </script>
+    <!-- AOS -->
+    <script>
+        AOS.init();
     </script>
 </body>
 

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Holiday - Contact</title>
+    <title>Fofana couture</title>
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -13,17 +13,66 @@
     <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
     <link href="css/flexslider.css" rel="stylesheet">
     <link href="css/templatemo-style.css" rel="stylesheet">
+    <!----------------------- Début favicon ------------------------------->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-----------------------## fin favicon ##------------------------------->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet">
+    <link href="css/templatemo-style.css" rel="stylesheet">
+    <!-- File JS AO -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169336795-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-169336795-1');
+    </script>
+    <!-- File PWA-->
+    <meta name="theme-color" content="#ffff" />
+    <link rel="manifest" href="manifest.json">
+    <script>
+        //if browser support service worker
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        };
+    </script>
 
 </head>
 
-<body>
+
+<body class="tm-gray-bg">
     <!-- Header -->
     <div class="tm-header">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-4 col-sm-3 tm-site-name-container">
-                    <a href="#" class="tm-site-name">Holiday</a>
+                    <a href="#" class="tm-site-name">Fofana Couture</a>
                 </div>
                 <div class="col-lg-6 col-md-8 col-sm-9">
                     <div class="mobile-menu-icon">
@@ -31,10 +80,13 @@
                     </div>
                     <nav class="tm-nav">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="tours.html">Our Tours</a></li>
-                            <li><a href="contact.html" class="active">Contact</a></li>
+                            <li><a href="index.html" class="active">Accueil</a></li>
+                            <li><a href="femmes.html">Femmes</a></li>
+                            <li><a href="hommes.html">Hommes</a></li>
+
+                            <li><a href="enfants.html">Enfants</a></li>
+                            <li><a href="couples.html">Couples</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -42,37 +94,63 @@
         </div>
     </div>
 
-    <!-- Banner -->
+    <!----- Début de la section 1 : l'entête = header ----->
     <section class="tm-banner">
         <!-- Flexslider -->
         <div class="flexslider flexslider-banner">
+
             <ul class="slides">
                 <li>
                     <div class="tm-banner-inner">
-                        <h1 class="tm-banner-title">Your <span class="tm-yellow-text">Special</span> Tour</h1>
-                        <p class="tm-banner-subtitle">For Upcoming Holidays</p>
-                        <a href="#more" class="tm-banner-link">Contact Us</a>
+                        <h1 class="tm-banner-title">Nous <span class="tm-yellow-text">sommes à votre</span> service</h1>
+                        <a href="contact.html" class="tm-banner-link">Contactez-nous</a>
                     </div>
-                    <img src="img/banner-3.jpg" alt="Banner 3" />
+                    <img src="images/accueil-header/header-fofana-1_5.jpg" alt="Image" />
+                </li>
+
+                <li>
+                    <div class="tm-banner-inner">
+                        <h1 class="tm-banner-title">Faites <span class="tm-yellow-text">votre </span>choix</h1>
+                        <a href="contact.html" class="tm-banner-link">Contactez-nous</a>
+                    </div>
+                    <img src="images/accueil-header/header-fofana-1_8.jpg" alt="Image" />
+                </li>
+
+                <li>
+                    <div class="tm-banner-inner">
+                        <h1 class="tm-banner-title">Nous sommes là<span class="tm-yellow-text"></span> pour vous</h1>
+                        <a href="contact.html" class="tm-banner-link">Contactez-nous</a>
+                    </div>
+                    <img src="images/accueil-header/header-fofana-1-0.jpeg" alt="Image" />
+                </li>
+                <li>
+                    <div class="tm-banner-inner">
+                        <h1 class="tm-banner-title">Faites <span class="tm-yellow-text">votre </span>choix</h1>
+                        <a href="contact.html" class="tm-banner-link">Contactez-nous</a>
+                    </div>
+                    <img src="images/accueil-header/header-fofana-7.jpg" alt="Image" />
                 </li>
             </ul>
+
         </div>
     </section>
+    <!----- ## Fin de la section 1 : l'entête = header ##----->
+
 
     <!-- gray bg -->
     <section class="container tm-home-section-1" id="more">
         <div class="row">
             <!-- slider -->
-            <div class="flexslider effect2 effect2-contact tm-contact-box-1">
+            <div class="flexslider flexslider-about effect2">
                 <ul class="slides">
                     <li>
-                        <img src="img/world-map.png" alt="image" class="contact-image" />
-                        <div class="contact-text">
-                            <h2 class="slider-title">Lorem Isum Dolor</h2>
-                            <h3 class="slider-subtitle">Gravida nibh vel velit auctor aliquet enean sollicitudin lorem quis auctor, nisi elit consequat ipsum</h3>
-                            <p class="slider-description">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                                <br><br> Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit
-                                mauris gestas quam, ut aliquam massa nisi.</p>
+                        <img src="images/fofana-1-2.jpg" alt="image" />
+                        <div class="flex-caption">
+                            <h2 class="slider-title">FOFANA COUTURE ?</h2>
+                            <h3 class="slider-subtitle">Les vêtements pour femme les plus chics à portée de clic.</h3>
+                            <p class="slider-description">Installé au charbonnage, FOFANA COUTURE bénéficie d'une solide expérience dans les domaines de la couture depuis plus de 15 ans.
+                                <br><br> Il est très important pour nous que toutes les femmes puissent trouver leur bonheur sur notre site, c’est pourquoi nous avons une gamme de taille très importante pour que n’importe quelle morphologie puisse y trouver
+                                son compte.</p>
                             <div class="slider-social">
                                 <a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
                                 <a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
@@ -81,113 +159,115 @@
                             </div>
                         </div>
                     </li>
-                </ul>
+                    <li>
+                        <img src="images/fofana-hommes-2.jpg" alt="image" />
+                        <div class="flex-caption">
+                            <h2 class="slider-title">FOFANA COUTURE ?</h2>
+                            <h3 class="slider-subtitle">Les vêtements pour les hommes les plus chics à portée de clic.</h3>
+                            <p class="slider-description">Installé au charbonnage, FOFANA COUTURE bénéficie d'une solide expérience dans les domaines de la couture depuis plus de 15 ans.
+                                <br><br> Il est très important pour nous que toutes les femmes puissent trouver leur bonheur sur notre site, c’est pourquoi nous avons une gamme de taille très importante pour que n’importe quelle morphologie puisse y trouver
+                                son compte.</p>
+                            <div class="slider-social">
+                                <a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="tm-social-icon"><i class="fa fa-pinterest"></i></a>
+                                <a href="#" class="tm-social-icon"><i class="fa fa-google-plus"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/fofana-enfants-1.jpg" alt="image" />
+                        <div class="flex-caption">
+                            <h2 class="slider-title">FOFANA COUTURE ?</h2>
+                            <h3 class="slider-subtitle">Les vêtements pour les enfants les plus chics à portée de clic.</h3>
+                            <p class="slider-description">Installé au charbonnage, FOFANA COUTURE bénéficie d'une solide expérience dans les domaines de la couture depuis plus de 15 ans.
+                                <br><br> Il est très important pour nous que toutes les femmes puissent trouver leur bonheur sur notre site, c’est pourquoi nous avons une gamme de taille très importante pour que n’importe quelle morphologie puisse y trouver
+                                son compte.</p>
+                            <div class="slider-social">
+                                <a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="tm-social-icon"><i class="fa fa-pinterest"></i></a>
+                                <a href="#" class="tm-social-icon"><i class="fa fa-google-plus"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/fofana-couples-15.jpg" alt="image" />
+                        <div class="flex-caption">
+                            <h2 class="slider-title">FOFANA COUTURE ?</h2>
+                            <h3 class="slider-subtitle">Les vêtements pour les couples les plus chics à portée de clic.</h3>
+                            <p class="slider-description">Installé au charbonnage, FOFANA COUTURE bénéficie d'une solide expérience dans les domaines de la couture depuis plus de 15 ans.
+                                <br><br> Il est très important pour nous que toutes les femmes puissent trouver leur bonheur sur notre site, c’est pourquoi nous avons une gamme de taille très importante pour que n’importe quelle morphologie puisse y trouver
+                                son compte.</p>
+                            <a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="tm-social-icon"><i class="fa fa-pinterest"></i></a>
+                            <a href="#" class="tm-social-icon"><i class="fa fa-google-plus"></i></a>
+                        </div>
             </div>
+            </li>
+            </ul>
         </div>
-    </section>
-
-    <!-- white bg -->
-    <section class="section-padding-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="tm-section-header section-margin-top">
-                    <div class="col-lg-4 col-md-3 col-sm-3">
-                        <hr>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <h2 class="tm-section-title">Contact Us</h2>
-                    </div>
-                    <div class="col-lg-4 col-md-3 col-sm-3">
-                        <hr>
+        </div>
+        <!-- white bg -->
+        <section class="section-padding-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="tm-section-header section-margin-top">
+                        <div class="col-lg-4 col-md-3 col-sm-3">
+                            <hr>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <h2 class="tm-section-title">Contactez-nous</h2>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-sm-3">
+                            <hr>
+                        </div>
                     </div>
                 </div>
+                <div class="row">
+                    <!-- contact form -->
+                    <form action="#" method="post" class="tm-contact-form">
+                        <div class="col-lg-6 col-md-6">
+                            <div id="google-map"></div>
+                            <div class="contact-social">
+                                <a href="#" class="tm-social-icon tm-social-facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="tm-social-icon tm-social-dribbble"><i class="fa fa-dribbble"></i></a>
+                                <a href="#" class="tm-social-icon tm-social-twitter"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="tm-social-icon tm-social-instagram"><i class="fa fa-instagram"></i></a>
+                                <a href="#" class="tm-social-icon tm-social-google-plus"><i class="fa fa-google-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 tm-contact-form-input">
+                            <div class="form-group">
+                                <input type="text" id="contact_name" class="form-control" placeholder="Nom (s)" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="contact_email" class="form-control" placeholder="Adresse mail" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="contact_subject" class="form-control" placeholder="Objet" />
+                            </div>
+                            <div class="form-group">
+                                <textarea id="contact_message" class="form-control" rows="6" placeholder="Votre message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button class="tm-submit-btn" type="submit" name="submit">Envoyer</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="row">
-                <!-- contact form -->
-                <form action="#" method="post" class="tm-contact-form">
-                    <div class="col-lg-6 col-md-6">
-                        <div id="google-map"></div>
-                        <div class="contact-social">
-                            <a href="#" class="tm-social-icon tm-social-facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="tm-social-icon tm-social-dribbble"><i class="fa fa-dribbble"></i></a>
-                            <a href="#" class="tm-social-icon tm-social-twitter"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="tm-social-icon tm-social-instagram"><i class="fa fa-instagram"></i></a>
-                            <a href="#" class="tm-social-icon tm-social-google-plus"><i class="fa fa-google-plus"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 tm-contact-form-input">
-                        <div class="form-group">
-                            <input type="text" id="contact_name" class="form-control" placeholder="NAME" />
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="contact_email" class="form-control" placeholder="EMAIL" />
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="contact_subject" class="form-control" placeholder="SUBJECT" />
-                        </div>
-                        <div class="form-group">
-                            <textarea id="contact_message" class="form-control" rows="6" placeholder="MESSAGE"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button class="tm-submit-btn" type="submit" name="submit">Submit now</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-------------###-----****** GALLERY ******-----###------------>
-    <div id="rl_pf">
-        <!-- #1 -->
-        <div class="show item open-item">
-            <a href="#">
-                <span class="full-link"></span>
-            </a>
-            <img src="img/men/fofana-men.jpg">
-            <div class="gallery-item-title text-base text-gray-800 bg-white">Modèles pour femmes</div>
-            <div class="pf_content">
-                <h2>Une couture sure-mesure</h2>
-                <h3>FOFANA COUTURE</h3>
-                <span class="pf_viewmore">[ TOUJOURS À VOTRE ÉCOUTE ]</span>
-            </div>
-        </div>
-        <!-- #2 -->
-        <div class="show item open-item">
-
-            <a href="#">
-                <span class="full-link"></span>
-            </a>
-            <img src="img/men/fofana-men.jpg">
-            <div class="gallery-item-title">Modèles pour hommes</div>
-            <div class="pf_content">
-                <h2>Une couture sure-mesure</h2>
-                <h3>FOFANA COUTURE</h3>
-                <span class="pf_viewmore">[ TOUJOURS À VOTRE ÉCOUTE ]</span>
-            </div>
-
-        </div>
-        <!--/#2 -->
-        <!-- #3 -->
-
-        <div class="show item open-item">
-            <a href="#">
-                <span class="full-link"></span>
-            </a>
-            <img src="img/men/fofana-men.jpg">
-            <div class="gallery-item-title">Modèles pour enfants</div>
-            <div class="pf_content">
-                <h2>Une couture sure-mesure</h2>
-                <h3>FOFANA COUTURE</h3>
-                <span class="pf_viewmore">[ TOUJOURS À VOTRE ÉCOUTE ]</span>
-            </div>
-        </div>
-        <!--/#3 -->
+        <button id="back-to-top-btn">
+            <i class="fa fa-angle-double-up"></i>
+          </button>
 
         <footer class="tm-black-bg">
             <div class="container">
                 <div class="row">
-                    <p class="tm-copyright-text">Copyright &copy; 2084 Your Company Name</p>
+                    <p class="tm-copyright-text">Copyright &copy; décembre 2020 Fofana couture</p>
                 </div>
             </div>
         </footer>
@@ -199,9 +279,11 @@
         <!-- flexslider js -->
         <script type="text/javascript" src="js/templatemo-script.js"></script>
         <!-- Templatemo Script -->
+        <!--<script src="js/loader.js"></script>-->
+        <script src="js/back.js"></script>
         <script>
             /* Google map
-                                                                                                                                                                                                                                              	------------------------------------------------*/
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      	------------------------------------------------*/
             var map = '';
             var center;
 
@@ -260,6 +342,10 @@
                 // Google Map
                 loadGoogleMap();
             });
+        </script>
+        <!-- AOS -->
+        <script>
+            AOS.init();
         </script>
 </body>
 
