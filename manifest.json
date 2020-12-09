@@ -1,7 +1,7 @@
 {
     "name": "FOFANA COUTURE",
     "short_name": "FOFANA COUTURE",
-    "description": "Fofana Couture, est une plateforme de couture, permettant aux utilisateurs de non seulement régarder les modèles disponibles mais aussi de pouvoir  choisir un ou plusieurs modèle (s).",
+    "description": "Fofana Couture, est une plateforme de couture, permettant aux utilisateurs de non seulement régarder les modèles disponibles mais aussi de pouvoir avoir le choix.",
     "start_url": "https://fofana-couture.netlify.app/",
     "display": "standalone",
     "orientation": "portrait",
@@ -10,12 +10,12 @@
     "theme_color": "#4234c5",
     "scope": "/",
     "icons": [{
-            "src": "images/fevicon/icon192x192.png",
+            "src": "img/fevicon/icon192x192.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "images/fevicon/logo310x310.png",
+            "src": "img/fevicon/logo310x310.png",
             "type": "image/png",
             "sizes": "310x310"
         }
