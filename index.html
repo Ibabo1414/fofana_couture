@@ -4,9 +4,27 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!----------------------- Début favicon -------------------------
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+
+    <meta name="theme-color" content="#ffffff">------>
+    <!-- File PWA--
+    <meta name="theme-color" content="#ffff" />--->
     <title>Fofana couture</title>
+
     <!----------------------- Début favicon ------------------------------->
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/fofana-couture-icon-152x152.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="white" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Salut tout le monde">
+    <meta name="msapplication-TileImage" content="images/fofana-couture-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <!----------------------- Début favicon -----------------------------
     <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
@@ -20,10 +38,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="img/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="img/manifest.json">-->
+
     <!----------------------- ## Fin favicon ## ------------------------------->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -33,6 +49,8 @@
     <link href="css/templatemo-style.css" rel="stylesheet">
     <!-- File JS AO -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- File PWA-->
+    <link rel="manifest" href="manifest.json">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169336795-1"></script>
@@ -46,9 +64,6 @@
 
         gtag('config', 'UA-169336795-1');
     </script>
-    <!-- File PWA-->
-    <meta name="theme-color" content="#ffff" />
-    <link rel="manifest" href="manifest.json">
     <script>
         //if browser support service worker
         if ('serviceWorker' in navigator) {
@@ -331,6 +346,9 @@
             </div>
         </div>
     </footer>
+    <!-- PWA -->
+    <script src="js/main.js"></script>
+    <!-- jQuery -->
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
     <!-- jQuery -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
