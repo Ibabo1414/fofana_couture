@@ -2,11 +2,11 @@
     "name": "fofana couture",
     "short_name": "fofana couture",
     "icons": [{
-        "src": "images/fofana-couture-icon-128x128.png",
+        "src": "images/fofana-couture-icon-128.png",
         "sizes": "128x128",
         "type": "image/png"
     }, {
-        "src": "images/fofana-couture-icon-144x144.png",
+        "src": "images/fofana-couture-icon-144.png",
         "sizes": "144x144",
         "type": "image/png"
     }, {
